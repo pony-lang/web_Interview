@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul id='show'>
+
+    </ul>
+    <button id='btn'></button>
+
+    <script>
+        // server var text = ['cheng', 'deng', 'sitong'];
+        
+        // var list = {
+        //     init: function () {
+        //         // this => list
+        //         this.oUl = document.getElementById('show');
+        //         this.age = 20;
+        //         this.name = 'duyi';
+        //         this.bindEvent();
+        //     },
+        //     bindEvent: function () {
+        //         // this list
+        //         document.getElementById('btn').onclick = this.getData.bind(this);
+        //         this.oUl.onclick = this.showText;
+        //     },
+        //     getData: function () {
+        //         //ajax
+        //         //data
+        //         // this btn
+        //         var text = ['cheng', 'deng', 'sitong'];
+        //         this.renderPage();
+        //     },
+        //     renderPage: function (data) {
+        //         // for () {
+        //             // data => li this.oUl.appendChild();
+        //         // }
+        //     },
+        //     showText: function () {
+
+        //     }
+        // }
+
+        // list.init();
+
+
+        // var a = 10;
+        // function test () {
+        //     // AO {this: {name: 'cst'}}
+        //     this.age = 10;
+        //     // 
+        //     // console.log(this.b)
+        // }
+
+        // window   js -> 默认方式来绑定
+        // 
+        // test();
+        // new test();
+        // var obj = {name: 'cst'}
+        // test.call(obj);
+
+        // console.log(obj.b)
+
+        // var obj = {
+        //     age: 18,
+        //     func: test
+        // }
+        // // // AO {this: obj}
+        // obj.func();
+        // console.log(obj.age)
+
+
+        // var name = 222;
+        // var a = {
+        //     name: 111,
+        //     say: function () {
+        //         console.log(this.name);
+        //     }
+        // }
+        // a.say();
+
+        // var b = {
+        //     name: 333,
+        //     say: function (fun) {
+        //         // this => b
+
+        //         // this  ==> window
+        //         fun();
+        //     }
+        // }
+
+        // b.say(a.say);
+        // b.say = a.say;
+        // b.say();
+
+        // 闭包
+        // 
+
+        // function outter () {
+        //     // AO {inner: }
+        //     // inner.[[scope]]
+        //     function inner () {
+        //     }
+        //     return inner;
+        // }
+            
+        var arr = [];
+        // GO 
+        // for (var i = 0; i < 10; i++) {
+        //     arr[i] = function () {
+        //         console.log(i)
+        //     }
+        // }
+        // arr[0]();
+        // arr[1]();
+
+        // for (var i = 0; i < 10; i++) {
+        //     (function (index) {
+        //         //AO1 => {index: 0}
+        //         arr[index] = function () {
+        //             console.log(index)
+        //         }
+        //     })(i);
+        // }
+
+        // arr[0]()
+        // arr[1]()
+        // arr[2]()
+
+        // function fun (n, o) {
+        //     //1. AO {n: 0, o: undefined}
+        //     //2. AO {n: 1, o: 0}
+        //     //3. AO {n: 2, o: 1}
+        //     console.log(o);
+        //     return {
+        //         fun: function (m) {
+        //             // 2 m: 1 n: 0
+        //             // 3 m: 2 n: 1
+        //             return fun(m, n);
+        //         }
+        //     }
+        // }
+
+        // // var b = fun(0).fun(1).fun(2).fun(3);
+        
+        // // undefined 0
+        // var c = fun(0).fun(1);
+        // c.fun(2);
+        // c.fun(3);
+        // c.fun(300)
+
+
+        // undefined 
+        // var a = fun(0);
+        // a.fun(1);
+        // a.fun(2);
+        // a.fun(3);
+
+
+
+
+        
+    </script>
+</body>
+</html>
